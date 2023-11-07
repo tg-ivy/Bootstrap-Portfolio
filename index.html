@@ -19,9 +19,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Work</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#about-id">About</a>
+              <a class="nav-link" href="#work-id">Work</a>
+              <a class="nav-link" href="#skills-id">Skills</a>
+              <a class="nav-link" href="#contact-id">Contact</a>
             </div>
           </div>
         </div>
@@ -29,70 +30,140 @@
 </section>
 
         <!-- About Jumbotron -->
-<section id="custom-about" class="container-lg bg-body-tertiary">
+<section id="custom-about" class="container-lg bg-body-tertiary" id="about-id">
     <img id="my-photo" src="./Images/MyPhoto.jpg" alt="A photo of me">
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
         <div class="container-lg py-5">
           <h1 class="display-5 fw-bold">Hi, my name is Tom...</h1>
           <p class="col-md-8 fs-5">Welcome to my portfolio. I'm a 24 year old aspiring front-end web developer. I have a passion for coding and love to design and bring websites to life. Have a browse of my projects below, and feel free to get into contact with me!</p>
-          <button class="btn btn-warning btn-md" type="button">View My Work</button>
+          <button class="btn btn-warning btn-md" type="button"><a class="cs-button" href="#contact-id">Contact Me</a></button>
         </div>
       </div>
 </section>
 
         <!-- Work Section -->
-<section class="container-lg bg-body-light" id="custom-work">
+<section class="container-lg bg-body-light custom-work" id="work-id">
+    <div class="cs-work-info">
+        <p class="display-3 fw-bold">Work</p>
+        <p>Here you'll find all my finished projects. These include both websites and web applications. Click on one to be taken to a live deployment of that project.</p>
+    </div>
     <div class="cs-work-grid">
         <div class="card cs-item-1" style="width: 18rem;">
             <img src="./Images/Netflix-background.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Shareflix</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">Stream Netflix and sync it with friends</p>
+              <a href="https://netflix.com" class="btn btn-warning">View</a>
             </div>
           </div>
         <div class="card cs-item-2" style="width: 18rem;">
             <img src="./Images/etchasketch-background.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Etch-A-Sketch</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">An in-browser Etch-A-Sketch for drawing</p>
+              <a href="https://tg-ivy.github.io/etch-a-sketch/" class="btn btn-warning">View</a>
             </div>
         </div>
         <div class="card cs-item-3" style="width: 18rem;">
             <img src="./Images/Calculator-background.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Online Calculator</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">A web application to perform calculations within the browser</p>
+              <a href="https://tg-ivy.github.io/odin-calculator/" class="btn btn-warning">View</a>
             </div>
         </div>
         <div class="card cs-item-4" style="width: 18rem;">
             <img src="./Images/ghibli-bg.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Studio Ghibli Art Page</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">Check out the art of the critically acclaimed Studio Ghibli filmsS</p>
+              <a href="https://ghiblicollection.com/" class="btn btn-warning">View</a>
             </div>
         </div>
         <div class="card cs-item-5" style="width: 18rem;">
             <img src="./Images/tandoori-background.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Bookham Tandoori</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">Browse the menu of this authentic Indian cuisine</p>
+              <a href="https://www.greatbookhamtandoori.co.uk/" class="btn btn-warning">View</a>
             </div>
         </div>
         <div class="card cs-item-6" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="./Images/spotify-bg.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Zerofy</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">Explore Spotify tracks that have zero current streams</p>
+              <a href="https://spotify.com" class="btn btn-warning">View</a>
             </div>
         </div>
     </div>
 </section>
+
+        <!-- Skills Section -->
+<section class="container-lg bg-body-tertiary custom-skills" id="skills-id">
+    <div class="cs-skills-info">
+        <p class="display-3 fw-bold">Skills</p>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              HTML, CSS, and JavaScript
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Proficiency in the foundational trio of web development - HTML, CSS, and JavaScript - forms the cornerstone of my skills. With an in-depth understanding of these languages, I craft visually appealing and interactive web applications. HTML structures the content, CSS styles it with precision, and JavaScript breathes life into the pages, making them dynamic and engaging. Whether it's creating responsive layouts, optimizing user interfaces, or implementing complex front-end functionality, I harness the power of these technologies to build seamless and user-friendly web experiences.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Web Dev Teambuilding
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Collaboration is at the heart of successful web development, and I thrive in team environments. I bring strong communication and interpersonal skills to the table, fostering a cohesive and productive atmosphere among team members. Whether it's working closely with designers to bring creative concepts to life or coordinating with back-end developers to ensure seamless functionality, I understand the importance of synergy in a development team. My ability to adapt, share knowledge, and embrace diverse perspectives makes me a valuable asset in collaborative projects, where we collectively transform ideas into impactful web solutions.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Code Refactoring
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Code refactoring is a practice I hold dear, where I enhance the maintainability, readability, and efficiency of existing codebases. It's all about improving the quality of the code without altering its external functionality. I possess a keen eye for identifying areas where code can be optimized, and I have hands-on experience in restructuring, eliminating redundancy, and implementing best practices. My dedication to code refactoring ensures that projects remain agile, easier to maintain, and adaptable to changing requirements, making the development process smoother and more reliable.</div>
+          </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact section -->
+<section class="container-lg bg-body-light custom-contact" id="contact-id">
+    <div class="cs-contact-info display-3 fw-bold">
+        Contact
+    </div>
+    <div class="cs-contact-icons">
+        <div class="icon">
+            <a href="https://www.outlook.com"><img src="./Images/email.png" alt=""></a>
+            <p>thomaspg@live.co.uk</p>
+        </div>
+        <div class="icon">
+            <a href="https://www.github.com/tg-ivy"><img src="./Images/github.png" alt=""></a>
+            <p>github.com/tg-ivy</p>  
+        </div>
+        <div class="icon">
+            <a href="https://instagram.com/tomgledhill99"><img src="./Images/insta.png" alt=""></a>
+            <p>tomgledhill99</p>  
+        </div>
+    </div>
+</section>
+
+        <!-- footer -->
+<footer class="container-lg bg-dark text-light">
+    © Tom Gledhill 2023
+</footer>
+
     <!--Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

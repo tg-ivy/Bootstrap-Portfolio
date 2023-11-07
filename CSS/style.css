@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 #my-photo {
@@ -11,10 +13,26 @@
     border-radius: 50%;
 }
 
+.cs-button {
+    text-decoration: none;
+    color: black;
+}
+
+.custom-work {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.cs-work-info {
+    padding: 20px;
+}
+
 .cs-work-grid {
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 350px;
+    grid-template-columns: 300px 300px 300px;
     grid-gap: 20px;
 }
 
@@ -23,3 +41,72 @@
     height: 150px;
 }
 
+.custom-skills {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 20px;
+}
+
+.cs-skills-info {
+    padding: 20px;
+}
+
+.custom-contact {
+    padding: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.cs-contact-info {
+    padding: 20px;
+}
+
+.cs-contact-icons {
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.cs-contact-icons img {
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+.cs-contact-icons img:hover {
+    box-shadow: 2px 2px 2px rgba(116, 116, 116, 0.655);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px rgba(116, 116, 116, 0.655);
+}
+
+
+@media screen and (max-width: 1240px) {
+    .cs-work-grid {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #custom-about {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cs-work-grid {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-gap: 20px;
+    }
+}
