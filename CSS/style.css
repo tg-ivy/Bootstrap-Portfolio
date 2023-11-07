@@ -1,0 +1,25 @@
+#custom-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-photo {
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.cs-work-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 350px;
+    grid-gap: 20px;
+}
+
+.cs-work-grid img {
+    width: 285px;
+    height: 150px;
+}
+
